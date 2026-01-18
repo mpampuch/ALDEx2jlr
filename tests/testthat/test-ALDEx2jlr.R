@@ -7,6 +7,7 @@ test_that("Setup ALDEx2.jl works", {
 
   # Test that hello_world returns the expected message
   result <- aldex2jl$hello_world()
+  print(result)
   expect_equal(result, "Hello World from ALDEx2.jl!")
 
   # Test that hello_world! returns the expected message
@@ -24,6 +25,7 @@ test_that("Setup ALDEx2GPU.jl works", {
 
   # Test that hello_world_gpu returns the expected message
   result <- aldex2gpu$hello_world_gpu()
+  print(result)
   expect_equal(result, "Hello World from ALDEx2GPU.jl!")
 
   # Test that hello_world_gpu! returns the expected message
